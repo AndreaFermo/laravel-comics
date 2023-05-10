@@ -20,6 +20,7 @@ header {
 
             &:hover {
                 border-bottom: 3px solid #0c7cec;
+                cursor: pointer;
 
                 a {
                     color: #0c7cec;
@@ -38,5 +39,122 @@ header {
 
     img {
         height: 80px;
+    }
+}
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .cards {
+        padding: 15px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 380px;
+        width: 450px;
+
+        .card {
+            width: 150px;
+        }
+
+        h3 {
+            color: white;
+            margin: 15px 0px 20px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 3px 0px;
+
+                a {
+                    text-decoration: none;
+                    color: #918f8d;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .footer-top {
+        width: 1170px;
+        margin: auto;
+        height: 450px;
+        position: relative;
+
+        .image-wrapper {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 450px;
+            width: 600px;
+            background-image: url('../img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+
+    .footer-bottom {
+        background-color: #303030;
+
+        .footer-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1170px;
+            margin: auto;
+            height: 100px;
+
+            .sign-up-button {
+                color: white;
+                border: 3px solid #0c7cec;
+                padding: 12px;
+
+            }
+
+            .socials {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #0c7cec;
+
+                }
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    margin-left: 30px;
+
+                    li {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.jumbotron-wrapper {
+    height: 400px;
+    position: relative;
+    background-image: url('../img/jumbotron.jpg');
+
+    .button-current-series {
+        position: absolute;
+        bottom: -19px;
+        left: 400px;
+        background-color: #0c7cec;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: white;
     }
 }
