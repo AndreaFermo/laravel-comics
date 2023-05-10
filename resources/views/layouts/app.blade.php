@@ -18,7 +18,7 @@
         @yield('content')
 
     </main>
-
+    @include('partials.bluebar')
     @include('partials.footer')
     
 </body>

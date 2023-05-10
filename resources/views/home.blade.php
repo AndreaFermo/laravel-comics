@@ -3,34 +3,20 @@
 @section('page-title', 'Home Page')
 
 
-@section('menu')
-    @foreach($headerSections as $headerSection)
-        <li><a href="#">{{$headerSection}}</a></li>
-    @endforeach
-@endsection
-
-
 @section('content')
-    <h1>io sono il content</h1>
+    <div class="cards">
+        @foreach($comicsList as $comic)
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="{{$comic['thumb']}}" alt="title">
+                </div>
+                <h5>{{$comic['series']}}</h5>
+            </div>
+        @endforeach
+    </div>
+    <div class="button-container">
+        <a href="#">LOAD MORE</a>
+    </div>
 @endsection
 
-@section('imageMenu')
-    @foreach($imagesNames as $imagesName)
-        <img src="{{Vite::asset('resources/img/footer-'. $imagesName.'.png')}}" alt="ciao"></li>
-    @endforeach
- @endsection
 
- @section('footerMenu')
-    @foreach($footerSections as $footerSection)
-        <div>
-            <h3 class="card-title">{{$footerSection['name']}}</h3>
-            <ul>
-                @foreach($footerSection['contents'] as $content)
-                    <li >
-                        <a href="#">{{$content}}</a>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    @endforeach
-@endsection
