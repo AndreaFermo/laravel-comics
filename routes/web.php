@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $headerSections = config('db.headerSections');
-    return view('home', compact('headerSections'));
+    $data = config('db');
+    return view('home', $data);
 });
